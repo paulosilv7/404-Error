@@ -1,0 +1,293 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+/* font-family: 'Space Mono', monospace; */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap'); 
+/* font-family: 'Inconsolata', monospace; */
+
+
+@-webkit-keyframes bounce-right {
+    0% {
+      -webkit-transform: translateX(48px);
+              transform: translateX(48px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+      opacity: 1;
+    }
+    24% {
+      opacity: 1;
+    }
+    40% {
+      -webkit-transform: translateX(26px);
+              transform: translateX(26px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    65% {
+      -webkit-transform: translateX(13px);
+              transform: translateX(13px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    82% {
+      -webkit-transform: translateX(6.5px);
+              transform: translateX(6.5px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    93% {
+      -webkit-transform: translateX(4px);
+              transform: translateX(4px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    25%,
+    55%,
+    75%,
+    87%,
+    98% {
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    100% {
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+      opacity: 1;
+    }
+  }
+
+  
+
+
+  
+  @keyframes bounce-right {
+    0% {
+      -webkit-transform: translateX(48px);
+              transform: translateX(48px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+      opacity: 1;
+    }
+    24% {
+      opacity: 1;
+    }
+    40% {
+      -webkit-transform: translateX(26px);
+              transform: translateX(26px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    65% {
+      -webkit-transform: translateX(13px);
+              transform: translateX(13px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    82% {
+      -webkit-transform: translateX(6.5px);
+              transform: translateX(6.5px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    93% {
+      -webkit-transform: translateX(4px);
+              transform: translateX(4px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    25%,
+    55%,
+    75%,
+    87%,
+    98% {
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    100% {
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+      opacity: 1;
+    }
+  }
+  
+
+
+  @keyframes go-back {
+    0% {
+        transform: translateX(100px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes bounce {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(-15px);
+    }
+  }
+  @-webkit-keyframes bounce {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(-15px);
+    }
+  }
+
+
+
+
+/* ------------------------------------------------- */
+
+a {
+    text-decoration: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Mono', monospace;
+    color: #333333;
+}
+
+body{
+    padding: 20px 20px 20px 20px;
+    display: grid;
+    grid-template-rows: 50px 825px 50px;
+    font-size: 10px;
+}
+
+main, footer, header {
+    padding: 10px 20px 10px 20px;
+}
+
+
+/* ------------------ HEADER ----------------------- */
+
+
+#title {
+    font-family: 'Inconsolata', monospace;
+    font-size: 18px;
+}
+ 
+
+
+
+/* --------------- LEFT SIDE------------------------ */
+
+main {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    justify-content: center;
+}
+
+
+    #straw-man {
+
+        width: 50vw;
+        min-width: 420px;
+        height: 400px;
+        max-width: 500px;
+        display: flex;
+
+    }
+
+        #straw-man img {
+            width: 420px;
+            height: 400px;
+        }
+
+    #texts {
+        width: 400px;
+        height: 400px;
+        flex-grow: 0.3;
+
+
+    }
+
+
+        #texts h1 {
+            width: 100%;
+            max-width: 650px;
+            height: 190px;
+            font-size: calc( 4.5em + 1vw);
+
+            margin-bottom: 5px;
+            animation: go-back 2s;
+        }
+
+        #texts p {
+            width: 100%;
+            max-width: 350px;
+            height: 108px;
+            font-size: 22px;
+            
+            margin-bottom: 20px;
+            animation: go-back 2.5s;
+        }
+
+
+        #botão {
+            padding: 23px 0px;
+
+            box-sizing: border-box;
+            color: white;
+            border: 0;
+            background-color: #333333;
+
+            animation: go-back 3s;
+        }
+
+            #botão:hover{
+                background-color: #595959;
+                transform: scale(1.1);
+                transition: 0.5s;
+            }
+
+
+         #botão a {
+            box-sizing: border-box;
+            padding: 23px 30px;
+            color: white;
+         }
+
+
+         #final{
+            justify-content: center;
+         }
+
+
+/* ---------------  FOOTER  ------------------------ */
+    
+
+    footer{
+        color:azure;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+        #final p, span, a{
+            color: rgb(185, 194, 194);
+        }
+    
